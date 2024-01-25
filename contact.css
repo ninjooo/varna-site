@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('images/Katedralata.png');
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    background-position: center;
+    background-size: cover;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.container h1 {
+    color: whitesmoke;
+}
+
+.container p {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.contact-box {
+    background: #fff;
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: rosybrown;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.container p {
+    margin-bottom: 40px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.imput-row .imput-group {
+    flex-basis: 45%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: rosybrown;
+}
+
+button {
+    background: rgb(65, 177, 230);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+button:hover {
+    box-shadow: 0px 5px 15px 0px rgb(39, 136, 136);
+}
+
+.contact-left h3 {
+    color: rosybrown;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-right h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child {
+    padding-right: 20px;
+}
+
+tr td {
+    padding-top: 20px;
+}
+
+.ctn {
+    font-size: 0px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: rgb(65, 177, 230);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.ctn:hover {
+    box-shadow: 0px 5px 15px 0px rgb(39, 136, 136);
+}
+
+a {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navbar {
+    text-align: center;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: rosybrown;
+    text-align: center;
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+@media only screen and (max-width:850px) {
+    .footer {
+        padding: 10px;
+    }
+    .input-row {
+        flex-direction: column;
+    }
+    .contact-right {
+        display: none;
+    }
+}

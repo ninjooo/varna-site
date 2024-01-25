@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="logo" src="images/gerb.png" alt="logo">
+        <ul class="nav-links">
+            <li class="active">
+                <a href="index.html"></a>Начална Страница</li>
+            <li class="unactive">
+                <a href="#team">Нашият екип</a>
+            </li>
+            <li class="unactive">
+                <a href="#">Различни теми на размишляване</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#g">География</a>
+                    </li>
+                    <li>
+                        <a href="#h">История</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="unactive">
+                <a href="#varna">Варна след години</a>
+            </li>
+            <li class="ctn">
+                <a href="contact.html">Контакт</a>
+            </li>
+        </ul>
+        <img src="./images/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>МИНАЛО, НАСТОЯЩЕ, БЪДЕЩЕ</h2>
+            <div class="line"></div>
+            <h1>Варна</h1>
+        </div>
+    </header>
+    <div class="section-divider"></div>
+    <section class="events" id="team">
+        <div class="title">
+            <h1>Нашият екип</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/Gorinov.jpg" alt="">
+                <h4>Кристиян Горинов</h4>
+                <p>Разработка на сайта</p>
+            </div>
+            <div class="col">
+                <img src="./images/Danev.jpg" alt="">
+                <h4>Кристиян Данев</h4>
+                <p>Писател на информация</p>
+            </div>
+            <div class="col">
+                <img src="./images/Dido.jpg" alt="">
+                <h4>Диян Иванов</h4>
+                <p>Задачите по география</p>
+            </div>
+            <div class="col">
+                <img src="./images/dITKO.jpg" alt="">
+                <h4>Диян Пейчев</h4>
+                <p>Задачите по история</p>
+            </div>
+            <div class="col">
+                <img src="./images/Dobcho.jpg" alt="">
+                <h4>Добромир Йорданов</h4>
+                <p>Морална подкрепа</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+    
+    <section class="explore" id="h">
+
+        <div class="exlore-video">
+
+        </div>
+        <div class="exlore-content">
+            <h1>Аспаруховият вал</h1>
+            <div class="line"></div>
+            <p>Аспаруховият вал е изграден през края на VII век в района на днешна България. Този исторически обект се свързва със създаването на Първата българска държава и дейността на хан Аспарух, основател на България. Една от основните теории за изграждането на вала е, че той е бил част от стратегическите мерки за отбрана срещу византийските нападения.
+                Останките на вала са открити предимно в района на Варна и околните селища. Археолозите са изследвали различни участъци от вала, като са откривали керамика, метални предмети и други артефакти.
+                Относно населението, обитавало тези територии, предполагаемо става дума за български племена и население, свързано с формирането на Първата българска държава. Животът през този период вероятно е бил организиран около селските общности, където селското стопанство и скотовъдството са били основни източници на прехрана.</p>
+        </div>
+
+        </div>
+    </section>
+
+
+    <section class="events" id="g">
+        <div class="title">
+            <h1>Демографски статистики</h1>
+            <p>натиснете върху всяка графика за голям екран<p>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/grafika1.png" alt="" onclick="openModal('./images/grafika1.png')">
+            </div>
+            <div class="col">
+                <img src="./images/grafika2.png" alt="" onclick="openModal('./images/grafika2.png')">
+            </div>
+            <div class="col">
+                <img src="./images/grafika3.png" alt="" onclick="openModal('./images/grafika3.png')">
+            </div>
+            <div class="col">
+                <img src="./images/grafika4.png" alt="" onclick="openModal('./images/grafika4.png')">
+            </div>
+            <div class="col">
+                <img src="./images/grafika5.png" alt="" onclick="openModal('./images/grafika5.png')">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="section-divider"></div>
+    <!--gallery-->
+    <section "id="cont">
+            <div class="container" >
+                <div class="heading" >
+                    <h3><span>Варна</span> преди 50 години</h3>
+                </div>
+            
+                <div class="box">
+                    <div class="dream">
+                        <img src="/images/1.jpeg"class="img">
+                        <img src="/images/2.png" class="img">
+                        <img src="/images/3.png" class="img">
+                        <img src="/images/14.jpg"class="img">
+                        <img src="/images/5.png" class="img">
+                    </div>
+
+                    <div class="dream">
+                        <img src="/images/6.jpg" class="img">
+                        <img src="/images/14.jpg" class="img">
+                        <img src="/images/8.png" class="img">
+                        <img src="/images/9.jpg" class="img">
+                        <img src="/images/10.jpg" class="img">
+                    </div>
+                    <div class="dream">
+                        <img src="/images/11.jpg" class="img">
+                        <img src="/images/12.jpg" class="img">
+                        <img src="/images/7.jpg" class="img">
+                        <img src="/images/4.png" class="img">
+                        <img src="/images/15.jpg" class="img">
+                    </div>
+                </div>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+    <!--varna-after-50s-->
+    <section class="testimonial" id="varna">
+        <div class="testimonial-heading">
+            <h1>Как виждаме Варна след 50 години:</h1>
+        </div>
+        <div class="testimonial-box-container">
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="./images/pfp1.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Туризъм</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-comment">
+                    <p>Варна е един от най-старите градове в Европа с дълбока история. Археологическият му музей е дом на богатата колекция от антични артефакти, включително златни съкровища от тракийската епоха. Морската градина, намираща се в центъра на града предлага отлична възможност за разходки и отдих. Варненският регион разполага с няколко километра плажна ивица, като Златни пясъци и Св. Константин и Елена са най-известните.
+                    </p>
+                </div>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="./images/pfp1.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Транспорт</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-comment">
+                    <p>Влагане на повече средства в изграждането на по-качествени и дълготрайни пътища. Евтин обществен транспорт.  Градът предоставя инфраструктура за велосипедисти и пешеходци. Има пешеходни зони в централната част на града, където хората могат да разглеждат магазините и ресторантите без да се налага да ползват автомобил или друго средство за транспорт.</p>
+                </div>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="./images/pfp1.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Търговия</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-comment">
+                    <p>Изграждане на търговски центрове. Варненското пристанище е най-голямото морско пристанище в България и един от най-големите в Черноморския регион. То играе важна роля в международната търговия, обслужвайки товари и пътници от и до различни дестинации.</p>
+                </div>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="./images/pfp1.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Екология</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-comment">
+                    <p>Озеленяване (градинки, зелени площи), полагане на обществен труд, разполагане на повече кошчета и чешми, по-стриктни мерки за хвърляне на отпадъци от предприятията, глоби и санкции за замърсяване.</p>
+                </div>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="./images/pfp1.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Икономика</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-comment">
+                    <p>Очакванията включват предоставяне на възможности за заетост, подкрепа на предприемачеството и насърчаване на иновациите, за да се поддържа икономически растеж. Разнообразие от работни възможности в различни сектори на икономиката.</p></div>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="./images/pfp1.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Образование</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-comment">
+                    <p>Висококачествени образователни институции, които да привличат хора от други страни. Организиране на семинари.</p>
+                </div>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="./images/pfp1.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Иновации в храненето</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-comment">
+                    <p>Напредъкът в научните изследвания и технологиите може да доведе до нови начини за производство на храни. Възможни са нови видове храни, включително тези, произведени от изкуствени източници или посредством иновативни методи на земеделие.</p>
+                </div>
+
+            </div>
+            <div class="testimonial-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="./images/pfp1.png" />
+                        </div>
+                        <div class="name-user">
+                            <strong>Социални промени</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-comment">
+                    <p>Прогнозирането на социалните промени след 50 години е изключително трудно поради сложната и динамична природа на обществените процеси. Все пак, някои от възможните тенденции, които могат да влияят на социалния живот във Варна след 50 години, включват: Технологични иновации, Промени в работната среда, Демографски промени, Образование и култура, Климатични предизвикателства и устойчивост.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <p>© 2023-2024 Всички права запазени от Кристиян Горинов</p>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+        function openModal(imgSrc){
+        document.getElementById('modalImg').src = imgSrc;
+        document.getElementById('imageModal').style.display = 'block';
+        }
+
+        function closeModal(){
+        document.getElementById('imageModal').style.display = 'none';
+        }
+
+        const sr = ScrollReveal({
+            distance: '65px',
+            duration: 2600,
+            delay: 450,
+            reset: true
+        });
+
+        sr.reveal('.logo', { delay: 500, origin: 'top' });
+        sr.reveal('.nav-links', { delay: 200, origin: 'top' });
+        sr.reveal('.header-content', { delay: 500, origin: 'top' });
+        sr.reveal('.events .title', { delay: 200, origin: 'top' });
+        sr.reveal('.events .row', { delay: 500, origin: 'bottom' });
+        sr.reveal('.exlore-content', { delay: 200, origin: 'top' });
+        sr.reveal('.testimonial-heading', { delay: 200, origin: 'top' });
+        sr.reveal('.testimonial-box', { delay: 350, origin: 'bottom' });
+        sr.reveal('.container .heading', { delay: 350, origin: 'top' });
+        sr.reveal('.container .dream .img', { delay: 350, origin: 'bottom' });
+    </script>
+</body>
+
+</html>
